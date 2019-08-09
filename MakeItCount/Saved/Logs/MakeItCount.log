@@ -564,3 +564,50 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.08.09-22.34.06:672][695]LogAssetRegistry: Asset discovery search completed in 18.2124 seconds
 [2019.08.09-22.34.06:673][695]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
 [2019.08.09-22.34.06:674][695]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000129 seconds (updated 0 objects)
+[2019.08.09-22.37.41:565][827]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.09-22.39.25:806][908]LogTemp: Repeating last play command: Selected Viewport
+[2019.08.09-22.39.25:868][908]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.09-22.39.25:905][908]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.09-22.39.25:957][908]PIE: New page: PIE session: Untitled_1 (Aug 9, 2019, 2:39:25 PM)
+[2019.08.09-22.39.26:041][908]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.09-22.39.26:091][908]LogPlayLevel: PIE: StaticDuplicateObject took: (0.049429s)
+[2019.08.09-22.39.26:092][908]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.09-22.39.26:102][908]LogPlayLevel: PIE: World Init took: (0.011044s)
+[2019.08.09-22.39.26:102][908]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.061072s)
+[2019.08.09-22.39.26:127][908]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2019.08.09-22.39.26:229][908]LogInit: XAudio2 using 'Headset Earphone (Corsair VOID RGB USB Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2019.08.09-22.39.26:337][908]LogInit: FAudioDevice initialized.
+[2019.08.09-22.39.26:409][908]LogLoad: Game class is 'GameModeBase'
+[2019.08.09-22.39.26:564][908]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.09-18.39.26
+[2019.08.09-22.39.26:573][908]LogWorld: Bringing up level for play took: 0.009552
+[2019.08.09-22.39.26:797][908]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0169 seconds. Added 20 classes and 0 folders.
+[2019.08.09-22.39.26:876][908]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.914
+[2019.08.09-22.39.26:877][908]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.09-22.39.31:964][498]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.09-22.39.32:004][498]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.09-22.39.32:041][498]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.09-22.39.32:042][498]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.09-22.39.32:083][498]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.09-22.39.32:085][498]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2019.08.09-22.39.32:114][499]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2019.08.09-22.39.33:282][635]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.08.09-22.39.39:310][317]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.08.09-22.43.50:244][891]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.08.09-22.47.22:775][358]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2019.08.09-22.47.34:291][992]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2019.08.09-22.53.28:051][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
+[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
+[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
+[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
+[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
+[2019.08.09-22.53.28:052][594]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by Shape_Wedge_B
+[2019.08.09-22.53.28:053][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
+[2019.08.09-22.53.28:371][594]LogActorFactory: Actor Factory created Shape_Wedge_B
+[2019.08.09-22.53.28:545][596]LogActorFactory: Actor Factory created Shape_Wedge_B
+[2019.08.09-22.53.35:042][346]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Shape_Wedge_B)
+[2019.08.09-22.53.35:986][458]Cmd: DELETE
+[2019.08.09-22.53.35:987][458]Cmd: ACTOR DELETE
+[2019.08.09-22.53.36:345][458]LogEditorActor: Deleted Actor: StaticMeshActor
+[2019.08.09-22.53.36:367][458]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2019.08.09-22.53.36:368][458]LogEditorActor: Deleted 1 Actors (0.150 secs)
+[2019.08.09-22.53.38:319][691]LogSlate: FSceneViewport::OnFocusLost() reason 0
