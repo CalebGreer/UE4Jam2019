@@ -1,4 +1,4 @@
-﻿Log file open, 08/09/19 18:33:46
+﻿Log file open, 08/10/19 14:30:09
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,8 +10,12 @@ LogInit: Display: Running engine for game: MakeItCount
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.397108
+LogStats: Stats thread started at 0.443875
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogWindows: Failed to load '../../../Engine/Binaries/ThirdParty/libsndfile/Win64/libsndfile-1.dll' (GetLastError=126)
+LogWindows: File '../../../Engine/Binaries/ThirdParty/libsndfile/Win64/libsndfile-1.dll' does not exist
+LogAudioMixer: Display: Failed to load Sound File dll
+LogAudioEditor: Display: LibSoundFile failed to load. Importing audio will not work correctly.
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin AISupport
@@ -116,17 +120,17 @@ LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connecti
 LogInit:  - LocalHostAddr = Default
 LogInit:  - BufferSize = 65536
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogInit: Build: ++UE4+Release-4.22-CL-7053642
-LogInit: Engine Version: 4.22.3-7053642+++UE4+Release-4.22
+LogInit: Build: ++UE4+Release-4.22-CL-5660361
+LogInit: Engine Version: 4.22.0-5660361+++UE4+Release-4.22
 LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
 LogInit: Net CL: 5660361
-LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz, GPU: NVIDIA GeForce GTX 1080 Ti
-LogInit: Compiled (64-bit): Jun 18 2019 03:09:11
+LogInit: OS: Windows 10 (Release 1809) (), CPU: AMD Ryzen 5 2600X Six-Core Processor           , GPU: Radeon RX 580 Series
+LogInit: Compiled (64-bit): Mar 31 2019 02:05:09
 LogInit: Compiled with Visual C++: 19.16.27025.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.22
-LogInit: Command Line:  -EpicPortal -epicusername=Kadraza -epicuserid=83820e60d97542cd9c9707daeed00048 -epiclocale=en-US
-LogInit: Base Directory: D:/Games/Epic Games/UE_4.22/Engine/Binaries/Win64/
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 23
 LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
@@ -156,458 +160,842 @@ LogInit: Presizing for max 16777216 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.08.09-22.33.46:752][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.08.09-22.33.46:752][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.08.09-22.33.46:752][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:752][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.08.09-22.33.46:752][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
-[2019.08.09-22.33.46:752][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:752][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.08.09-22.33.46:753][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:753][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:757][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:757][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.08.09-22.33.46:757][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.08.09-22.33.46:757][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:757][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.08.09-22.33.46:757][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.08.09-22.33.46:758][  0]LogInit: Selected Device Profile: [Windows]
-[2019.08.09-22.33.46:758][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.08.09-22.33.46:767][  0]LogHAL: Display: Platform has ~ 16 GB [17138212864 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
-[2019.08.09-22.33.46:767][  0]LogInit: Going up to parent DeviceProfile []
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.08.09-22.33.46:767][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2019.08.09-22.33.46:768][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Game Development/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
-[2019.08.09-22.33.46:768][  0]LogInit: Computer: KADRAZA-PC
-[2019.08.09-22.33.46:768][  0]LogInit: User: caleb
-[2019.08.09-22.33.46:768][  0]LogInit: CPU Page size=4096, Cores=6
-[2019.08.09-22.33.46:768][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2019.08.09-22.33.46:768][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
-[2019.08.09-22.33.46:768][  0]LogMemory: Platform Memory Stats for Windows
-[2019.08.09-22.33.46:768][  0]LogMemory: Process Physical Memory: 97.65 MB used, 97.65 MB peak
-[2019.08.09-22.33.46:768][  0]LogMemory: Process Virtual Memory: 89.90 MB used, 89.90 MB peak
-[2019.08.09-22.33.46:768][  0]LogMemory: Physical Memory: 8539.34 MB used,  7804.94 MB free, 16344.27 MB total
-[2019.08.09-22.33.46:768][  0]LogMemory: Virtual Memory: 4674.63 MB used,  134213056.00 MB free, 134217728.00 MB total
-[2019.08.09-22.33.46:783][  0]LogInit: Using OS detected language (en-US).
-[2019.08.09-22.33.46:783][  0]LogInit: Using OS detected locale (en-CA).
-[2019.08.09-22.33.46:784][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.08.09-22.33.46:906][  0]LogInit: Setting process to per monitor DPI aware
-[2019.08.09-22.33.46:936][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.08.09-22.33.46:936][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.08.09-22.33.47:127][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.08.09-22.33.47:127][  0]LogD3D11RHI: D3D11 adapters:
-[2019.08.09-22.33.47:184][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080 Ti' (Feature Level 11_0)
-[2019.08.09-22.33.47:184][  0]LogD3D11RHI:       11127/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2019.08.09-22.33.47:185][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.08.09-22.33.47:185][  0]LogD3D11RHI:       0/0/8172 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.08.09-22.33.47:185][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.08.09-22.33.47:192][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.08.09-22.33.47:192][  0]LogD3D11RHI:     GPU DeviceId: 0x1b06 (for the marketing name, search the web for "GPU Device Id")
-[2019.08.09-22.33.47:192][  0]LogWindows: EnumDisplayDevices:
-[2019.08.09-22.33.47:193][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080 Ti' (P:1 D:1)
-[2019.08.09-22.33.47:193][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:1)
-[2019.08.09-22.33.47:193][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
-[2019.08.09-22.33.47:193][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080 Ti' (P:0 D:0)
-[2019.08.09-22.33.47:193][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.08.09-22.33.47:193][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080 Ti
-[2019.08.09-22.33.47:193][  0]LogD3D11RHI:   Driver Version: 430.64 (internal:26.21.14.3064, unified:430.64)
-[2019.08.09-22.33.47:193][  0]LogD3D11RHI:      Driver Date: 5-5-2019
-[2019.08.09-22.33.47:193][  0]LogRHI: Texture pool is 7788 MB (70% of 11127 MB)
-[2019.08.09-22.33.47:225][  0]LogD3D11RHI: Async texture creation enabled
-[2019.08.09-22.33.47:236][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.08.09-22.33.47:236][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.08.09-22.33.47:236][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.08.09-22.33.47:244][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2019.08.09-22.33.47:584][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
-[2019.08.09-22.33.47:594][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
-[2019.08.09-22.33.47:603][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
-[2019.08.09-22.33.47:612][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
-[2019.08.09-22.33.47:622][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
-[2019.08.09-22.33.47:632][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
-[2019.08.09-22.33.47:642][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
-[2019.08.09-22.33.47:652][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
-[2019.08.09-22.33.47:656][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
-[2019.08.09-22.33.47:715][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
-[2019.08.09-22.33.47:716][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
-[2019.08.09-22.33.47:717][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
-[2019.08.09-22.33.47:758][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
-[2019.08.09-22.33.47:758][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
-[2019.08.09-22.33.47:777][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
-[2019.08.09-22.33.47:777][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
-[2019.08.09-22.33.47:786][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
-[2019.08.09-22.33.47:795][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
-[2019.08.09-22.33.47:805][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
-[2019.08.09-22.33.47:814][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
-[2019.08.09-22.33.47:848][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
-[2019.08.09-22.33.47:848][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
-[2019.08.09-22.33.47:848][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.08.09-22.33.47:853][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2019.08.09-22.33.47:881][  0]LogShaderCompilers: Guid format shader working directory is -10 characters bigger than the processId version (../../../../../../Game Development/UE4Jam2019/MakeItCount/Intermediate/Shaders/WorkingDirectory/916/).
-[2019.08.09-22.33.47:881][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/caleb/AppData/Local/Temp/UnrealShaderWorkingDir/199AC4C04C856CF9A68EC391CCA1901C/'.
-[2019.08.09-22.33.47:882][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.08.09-22.33.47:882][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.08.09-22.33.47:882][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.08.09-22.33.48:324][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: Loaded boot cache 0.04s 71MB C:/Users/caleb/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/caleb/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Game Development/UE4Jam2019/MakeItCount/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Game Development/UE4Jam2019/MakeItCount/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.08.09-22.33.48:365][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.08.09-22.33.48:375][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.08.09-22.33.48:376][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.08.09-22.33.48:376][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.08.09-22.33.48:387][  0]LogDerivedDataCache: Using Local data cache path C:/Users/caleb/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.08.09-22.33.48:387][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.08.09-22.33.48:387][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.08.09-22.33.48:404][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.08.09-22.33.48:405][  0]LogSlate: Using FreeType 2.6.0
-[2019.08.09-22.33.48:405][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.08.09-22.33.48:482][  0]LogAssetRegistry: FAssetRegistry took 0.0309 seconds to start up
-[2019.08.09-22.33.48:732][  0]LogInit: Selected Device Profile: [Windows]
-[2019.08.09-22.33.48:831][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.08.09-22.33.48:831][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2019.08.09-22.33.48:831][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.08.09-22.33.48:831][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2019.08.09-22.33.48:831][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2019.08.09-22.33.48:844][  0]LogNetVersion: MakeItCount 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 3016932210)
-[2019.08.09-22.33.49:151][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.031470 seconds
-[2019.08.09-22.33.49:157][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
-[2019.08.09-22.33.49:157][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
-[2019.08.09-22.33.49:157][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.08.09-22.33.49:840][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.08.09-22.33.49:862][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.08.09-22.33.49:954][  0]SourceControl: Source control is disabled
-[2019.08.09-22.33.49:954][  0]SourceControl: Source control is disabled
-[2019.08.09-22.33.49:955][  0]SourceControl: Source control is disabled
-[2019.08.09-22.33.49:955][  0]SourceControl: Source control is disabled
-[2019.08.09-22.33.50:011][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.08.09-22.33.50:123][  0]LogOcInput: OculusInput pre-init called
-[2019.08.09-22.33.50:727][  0]LogEngine: Initializing Engine...
-[2019.08.09-22.33.50:727][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.08.09-22.33.50:728][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2019.08.09-22.33.50:898][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.08.09-22.33.50:906][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.08.09-22.33.50:994][  0]LogInit: XAudio2 using 'Headset Earphone (Corsair VOID RGB USB Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2019.08.09-22.33.51:113][  0]LogInit: FAudioDevice initialized.
-[2019.08.09-22.33.51:113][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.08.09-22.33.51:163][  0]LogDerivedDataCache: Saved boot cache 0.05s 71MB C:/Users/caleb/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
-[2019.08.09-22.33.51:173][  0]LogInit: Texture streaming: Enabled
-[2019.08.09-22.33.51:186][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.08.09-22.33.51:206][  0]LogInit: Transaction tracking system initialized
-[2019.08.09-22.33.51:220][  0]BlueprintLog: New page: Editor Load
-[2019.08.09-22.33.51:301][  0]LocalizationService: Localization service is disabled
-[2019.08.09-22.33.51:568][  0]LogFileCache: Scanning file cache for directory 'D:/Game Development/UE4Jam2019/MakeItCount/Content/' took 0.01s
-[2019.08.09-22.33.51:569][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.08.09-22.33.51:569][  0]LogCook: Display: Mobile HDR setting 1
-[2019.08.09-22.33.51:714][  0]SourceControl: Source control is disabled
-[2019.08.09-22.33.51:714][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.08.09-22.33.51:714][  0]LightingResults: New page: Lighting Build
-[2019.08.09-22.33.51:715][  0]MapCheck: New page: Map Check
-[2019.08.09-22.33.51:715][  0]LightingResults: New page: Lighting Build
-[2019.08.09-22.33.51:743][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
-[2019.08.09-22.33.51:792][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2019.08.09-22.33.51:795][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.08.09-22.33.51:822][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
-[2019.08.09-22.33.51:822][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.08.09-22.33.51:822][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.089ms to complete.
-[2019.08.09-22.33.51:822][  0]LogFileHelpers: Loading map 'Template_Default' took 0.108
-[2019.08.09-22.33.51:908][  0]LogCollectionManager: Loaded 0 collections in 0.000808 seconds
-[2019.08.09-22.33.51:978][  0]LogFileCache: Scanning file cache for directory 'D:/Game Development/UE4Jam2019/MakeItCount/Saved/Collections/' took 0.01s
-[2019.08.09-22.33.51:978][  0]LogFileCache: Scanning file cache for directory 'D:/Game Development/UE4Jam2019/MakeItCount/Content/Developers/caleb/Collections/' took 0.01s
-[2019.08.09-22.33.51:978][  0]LogFileCache: Scanning file cache for directory 'D:/Game Development/UE4Jam2019/MakeItCount/Content/Collections/' took 0.01s
-[2019.08.09-22.33.51:978][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.08.09-22.33.51:985][  0]LogContentBrowser: Native class hierarchy populated in 0.0062 seconds. Added 2732 classes and 659 folders.
-[2019.08.09-22.33.51:988][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.08.09-22.33.51:993][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.51:997][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:008][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:011][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:014][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:017][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:021][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:024][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:028][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:031][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:035][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:039][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:042][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:045][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:048][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:051][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:071][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:074][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:077][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:080][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:084][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:088][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:091][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:094][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:097][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:102][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.08.09-22.33.52:194][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.08.09-22.33.52:211][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.33.52:217][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.33.52:223][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.33.52:228][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.33.52:262][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2019.08.09-22.33.52:309][  0]LogSlate: Took 0.000194 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.08.09-22.33.52:314][  0]LogSlate: Took 0.003712 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.08.09-22.33.52:314][  0]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.08.09-22.33.52:322][  0]LogSlate: Took 0.003757 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2019.08.09-22.33.52:395][  0]LogRenderer: Reallocating scene render targets to support 1208x664 Format 10 NumSamples 1 (Frame:1).
-[2019.08.09-22.33.52:494][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.08.09-22.33.52:495][  0]LogLoad: (Engine Initialization) Total time: 7.65 seconds
-[2019.08.09-22.33.52:495][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.08.09-22.33.52:519][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.08.09-22.34.06:672][695]LogAssetRegistry: Asset discovery search completed in 18.2124 seconds
-[2019.08.09-22.34.06:673][695]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2019.08.09-22.34.06:674][695]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000129 seconds (updated 0 objects)
-[2019.08.09-22.37.41:565][827]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.08.09-22.39.25:806][908]LogTemp: Repeating last play command: Selected Viewport
-[2019.08.09-22.39.25:868][908]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2019.08.09-22.39.25:905][908]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.08.09-22.39.25:957][908]PIE: New page: PIE session: Untitled_1 (Aug 9, 2019, 2:39:25 PM)
-[2019.08.09-22.39.26:041][908]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
-[2019.08.09-22.39.26:091][908]LogPlayLevel: PIE: StaticDuplicateObject took: (0.049429s)
-[2019.08.09-22.39.26:092][908]LogAIModule: Creating AISystem for world Untitled_1
-[2019.08.09-22.39.26:102][908]LogPlayLevel: PIE: World Init took: (0.011044s)
-[2019.08.09-22.39.26:102][908]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.061072s)
-[2019.08.09-22.39.26:127][908]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
-[2019.08.09-22.39.26:229][908]LogInit: XAudio2 using 'Headset Earphone (Corsair VOID RGB USB Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2019.08.09-22.39.26:337][908]LogInit: FAudioDevice initialized.
-[2019.08.09-22.39.26:409][908]LogLoad: Game class is 'GameModeBase'
-[2019.08.09-22.39.26:564][908]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.09-18.39.26
-[2019.08.09-22.39.26:573][908]LogWorld: Bringing up level for play took: 0.009552
-[2019.08.09-22.39.26:797][908]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0169 seconds. Added 20 classes and 0 folders.
-[2019.08.09-22.39.26:876][908]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.914
-[2019.08.09-22.39.26:877][908]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2019.08.09-22.39.31:964][498]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2019.08.09-22.39.32:004][498]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.39.32:041][498]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.08.09-22.39.32:042][498]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
-[2019.08.09-22.39.32:083][498]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.08.09-22.39.32:085][498]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
-[2019.08.09-22.39.32:114][499]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2019.08.09-22.39.33:282][635]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.08.09-22.39.39:310][317]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.08.09-22.43.50:244][891]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.08.09-22.47.22:775][358]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
-[2019.08.09-22.47.34:291][992]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
-[2019.08.09-22.53.28:051][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
-[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
-[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
-[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
-[2019.08.09-22.53.28:052][594]LogLinker: Warning: Can't find file '/Game/StarterContent/Materials/M_Basic_Wall'
-[2019.08.09-22.53.28:052][594]LoadErrors: Failed to load /Game/StarterContent/Materials/M_Basic_Wall.M_Basic_Wall Referenced by Shape_Wedge_B
-[2019.08.09-22.53.28:053][594]LogLinker: Warning: Can't find file for asset '/Game/StarterContent/Materials/M_Basic_Wall' while loading NULL.
-[2019.08.09-22.53.28:371][594]LogActorFactory: Actor Factory created Shape_Wedge_B
-[2019.08.09-22.53.28:545][596]LogActorFactory: Actor Factory created Shape_Wedge_B
-[2019.08.09-22.53.35:042][346]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Shape_Wedge_B)
-[2019.08.09-22.53.35:986][458]Cmd: DELETE
-[2019.08.09-22.53.35:987][458]Cmd: ACTOR DELETE
-[2019.08.09-22.53.36:345][458]LogEditorActor: Deleted Actor: StaticMeshActor
-[2019.08.09-22.53.36:367][458]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
-[2019.08.09-22.53.36:368][458]LogEditorActor: Deleted 1 Actors (0.150 secs)
-[2019.08.09-22.53.38:319][691]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.08.10-18.30.09:886][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
+[2019.08.10-18.30.09:886][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:886][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.08.10-18.30.09:886][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.08.10-18.30.09:887][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:887][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.08.10-18.30.09:890][  0]LogInit: Selected Device Profile: [Windows]
+[2019.08.10-18.30.09:890][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.08.10-18.30.09:960][  0]LogHAL: Display: Platform has ~ 16 GB [17121603584 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.08.10-18.30.09:960][  0]LogInit: Going up to parent DeviceProfile []
+[2019.08.10-18.30.09:960][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.08.10-18.30.09:960][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Scalability.ini]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.08.10-18.30.09:961][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.08.10-18.30.09:962][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.08.10-18.30.09:962][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.08.10-18.30.09:962][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Config/Windows/Engine.ini]
+[2019.08.10-18.30.09:962][  0]LogInit: Computer: DESKTOP-HEN2925
+[2019.08.10-18.30.09:962][  0]LogInit: User: Siege
+[2019.08.10-18.30.09:962][  0]LogInit: CPU Page size=4096, Cores=6
+[2019.08.10-18.30.09:962][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.08.10-18.30.09:962][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2019.08.10-18.30.09:962][  0]LogMemory: Platform Memory Stats for Windows
+[2019.08.10-18.30.09:962][  0]LogMemory: Process Physical Memory: 96.80 MB used, 96.80 MB peak
+[2019.08.10-18.30.09:962][  0]LogMemory: Process Virtual Memory: 89.83 MB used, 89.83 MB peak
+[2019.08.10-18.30.09:962][  0]LogMemory: Physical Memory: 11097.05 MB used,  5231.39 MB free, 16328.43 MB total
+[2019.08.10-18.30.09:962][  0]LogMemory: Virtual Memory: 4672.83 MB used,  134213056.00 MB free, 134217728.00 MB total
+[2019.08.10-18.30.09:980][  0]LogInit: Using OS detected language (en-US).
+[2019.08.10-18.30.09:980][  0]LogInit: Using OS detected locale (en-CA).
+[2019.08.10-18.30.09:981][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.08.10-18.30.10:223][  0]LogInit: Setting process to per monitor DPI aware
+[2019.08.10-18.30.10:486][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.08.10-18.30.10:486][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.08.10-18.30.12:899][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.08.10-18.30.12:899][  0]LogD3D11RHI: D3D11 adapters:
+[2019.08.10-18.30.13:190][  0]LogD3D11RHI:    0. 'Radeon RX 580 Series' (Feature Level 11_0)
+[2019.08.10-18.30.13:190][  0]LogD3D11RHI:       8172/0/8164 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2019.08.10-18.30.13:193][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.08.10-18.30.13:193][  0]LogD3D11RHI:       0/0/8164 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.08.10-18.30.13:193][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.08.10-18.30.13:252][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.08.10-18.30.13:252][  0]LogD3D11RHI:     GPU DeviceId: 0x67df (for the marketing name, search the web for "GPU Device Id")
+[2019.08.10-18.30.13:252][  0]LogWindows: EnumDisplayDevices:
+[2019.08.10-18.30.13:252][  0]LogWindows:    0. 'Radeon RX 580 Series' (P:1 D:1)
+[2019.08.10-18.30.13:253][  0]LogWindows:    1. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:253][  0]LogWindows:    2. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:253][  0]LogWindows:    3. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:253][  0]LogWindows:    4. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:254][  0]LogWindows:    5. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:255][  0]LogWindows:    6. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:255][  0]LogWindows:    7. 'Radeon RX 580 Series' (P:0 D:0)
+[2019.08.10-18.30.13:255][  0]LogWindows: DebugString: FoundDriverCount:8 
+[2019.08.10-18.30.13:255][  0]LogD3D11RHI:     Adapter Name: Radeon RX 580 Series
+[2019.08.10-18.30.13:255][  0]LogD3D11RHI:   Driver Version: Adrenalin 2019 19.4.1 (internal:25.20.15031.1000, unified:25.20.15031.1000)
+[2019.08.10-18.30.13:255][  0]LogD3D11RHI:      Driver Date: 3-26-2019
+[2019.08.10-18.30.13:255][  0]LogRHI: Texture pool is 5720 MB (70% of 8172 MB)
+[2019.08.10-18.30.13:303][  0]LogD3D11RHI: Async texture creation enabled
+[2019.08.10-18.30.13:306][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.08.10-18.30.13:307][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.08.10-18.30.13:307][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.08.10-18.30.13:314][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2019.08.10-18.30.13:650][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.08.10-18.30.13:665][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.08.10-18.30.13:680][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.08.10-18.30.13:694][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.08.10-18.30.13:730][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.08.10-18.30.13:745][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.08.10-18.30.13:760][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.08.10-18.30.13:774][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.08.10-18.30.13:781][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.08.10-18.30.13:882][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.08.10-18.30.13:883][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.08.10-18.30.13:933][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.08.10-18.30.13:933][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.08.10-18.30.13:967][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.08.10-18.30.13:967][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.08.10-18.30.13:990][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.08.10-18.30.14:013][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.08.10-18.30.14:025][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.08.10-18.30.14:058][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.08.10-18.30.14:109][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.08.10-18.30.14:109][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.08.10-18.30.14:109][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.08.10-18.30.14:118][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.08.10-18.30.14:178][  0]LogShaderCompilers: Guid format shader working directory is -40 characters bigger than the processId version (../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Intermediate/Shaders/WorkingDirectory/948/).
+[2019.08.10-18.30.14:178][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Siege/AppData/Local/Temp/UnrealShaderWorkingDir/818A26B849BFB3B0EB28B4824EE3A8C4/'.
+[2019.08.10-18.30.14:180][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.08.10-18.30.14:181][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.08.10-18.30.14:181][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.08.10-18.30.20:089][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: Loaded boot cache 0.06s 73MB C:/Users/Siege/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Siege/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.08.10-18.30.20:145][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.08.10-18.30.20:157][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.08.10-18.30.20:160][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Enterprise/DerivedDataCache/Compressed.ddp.
+[2019.08.10-18.30.20:172][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Siege/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.08.10-18.30.20:172][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.08.10-18.30.20:172][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.08.10-18.30.20:205][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.08.10-18.30.20:207][  0]LogSlate: Using FreeType 2.6.0
+[2019.08.10-18.30.20:237][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.08.10-18.30.21:238][  0]LogAssetRegistry: FAssetRegistry took 0.0401 seconds to start up
+[2019.08.10-18.30.21:616][  0]LogInit: Selected Device Profile: [Windows]
+[2019.08.10-18.30.21:799][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.08.10-18.30.21:799][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.08.10-18.30.21:799][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.08.10-18.30.21:799][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.08.10-18.30.21:799][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.08.10-18.30.21:814][  0]LogNetVersion: MakeItCount 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 3016932210)
+[2019.08.10-18.30.22:243][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.069868 seconds
+[2019.08.10-18.30.22:251][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
+[2019.08.10-18.30.22:251][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
+[2019.08.10-18.30.22:251][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.08.10-18.30.44:717][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.08.10-18.30.44:732][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.08.10-18.30.44:887][  0]SourceControl: Source control is disabled
+[2019.08.10-18.30.44:888][  0]SourceControl: Source control is disabled
+[2019.08.10-18.30.44:889][  0]SourceControl: Source control is disabled
+[2019.08.10-18.30.44:890][  0]SourceControl: Source control is disabled
+[2019.08.10-18.30.45:068][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.08.10-18.30.45:201][  0]LogOcInput: OculusInput pre-init called
+[2019.08.10-18.30.45:829][  0]LogEngine: Initializing Engine...
+[2019.08.10-18.30.45:830][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.08.10-18.30.45:831][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.08.10-18.30.46:042][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.08.10-18.30.46:057][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.08.10-18.30.46:078][  0]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-18.30.46:094][  0]LogInit: FAudioDevice initialized.
+[2019.08.10-18.30.46:094][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.08.10-18.30.46:578][  0]LogDerivedDataCache: Saved boot cache 0.48s 71MB C:/Users/Siege/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.08.10-18.30.46:596][  0]LogInit: Texture streaming: Enabled
+[2019.08.10-18.30.46:685][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.08.10-18.30.46:768][  0]LogInit: Transaction tracking system initialized
+[2019.08.10-18.30.46:809][  0]BlueprintLog: New page: Editor Load
+[2019.08.10-18.30.46:901][  0]LocalizationService: Localization service is disabled
+[2019.08.10-18.30.47:204][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Content/' took 0.01s
+[2019.08.10-18.30.47:204][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.08.10-18.30.47:204][  0]LogCook: Display: Mobile HDR setting 1
+[2019.08.10-18.30.47:396][  0]SourceControl: Source control is disabled
+[2019.08.10-18.30.47:396][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.08.10-18.30.47:396][  0]LightingResults: New page: Lighting Build
+[2019.08.10-18.30.47:399][  0]MapCheck: New page: Map Check
+[2019.08.10-18.30.47:399][  0]LightingResults: New page: Lighting Build
+[2019.08.10-18.30.47:437][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2019.08.10-18.30.47:514][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-18.30.47:518][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.08.10-18.30.47:559][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2019.08.10-18.30.47:559][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.08.10-18.30.47:559][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.15ms to complete.
+[2019.08.10-18.30.47:559][  0]LogFileHelpers: Loading map 'Template_Default' took 0.164
+[2019.08.10-18.30.48:411][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-18.30.48:423][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-18.30.48:434][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-18.30.48:446][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-18.30.48:583][  0]LogCollectionManager: Loaded 0 collections in 0.003055 seconds
+[2019.08.10-18.30.48:715][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Collections/' took 0.01s
+[2019.08.10-18.30.48:715][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Content/Developers/Siege/Collections/' took 0.01s
+[2019.08.10-18.30.48:715][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Content/Collections/' took 0.00s
+[2019.08.10-18.30.48:715][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.08.10-18.30.48:731][  0]LogContentBrowser: Native class hierarchy populated in 0.0158 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-18.30.48:967][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.08.10-18.30.49:410][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.49:554][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.49:762][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.49:797][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.49:892][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.49:956][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:146][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:331][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:366][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:485][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:570][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:691][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:730][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:785][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:840][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:888][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.50:946][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:092][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:165][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:194][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:243][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:272][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:394][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:429][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:470][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:521][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:568][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.51:719][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.08.10-18.30.55:889][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2019.08.10-18.30.56:152][  0]LogSlate: Took 0.000228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.08.10-18.30.56:155][  0]LogSlate: Took 0.000219 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.08.10-18.30.56:200][  0]LogSlate: Took 0.033766 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.08.10-18.30.56:332][  0]LogSlate: Took 0.131795 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2019.08.10-18.30.56:882][  0]LogRenderer: Reallocating scene render targets to support 1104x656 Format 10 NumSamples 1 (Frame:1).
+[2019.08.10-18.30.57:004][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.08.10-18.30.57:004][  0]LogLoad: (Engine Initialization) Total time: 49.91 seconds
+[2019.08.10-18.30.57:004][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.08.10-18.30.57:040][  0]LogAssetRegistry: Asset discovery search completed in 35.8239 seconds
+[2019.08.10-18.30.57:042][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.08.10-18.30.57:043][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000226 seconds (updated 0 objects)
+[2019.08.10-18.30.57:044][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.08.10-18.30.57:081][  0]LogSlate: Took 0.021765 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.08.10-18.36.25:955][896]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.36.41:132][478]LogSlate: Took 0.000175 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.08.10-18.36.49:783][478]LogSlate: Window 'Pick Parent Class' being destroyed
+[2019.08.10-18.37.12:976][157]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_BlackHole" FILE="../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Content/BP_BlackHole.uasset" SILENT=true
+[2019.08.10-18.37.13:034][157]LogSavePackage: Moving '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/BP_BlackHoleC0126091434C585398BD479DE185259B.tmp' to '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Content/BP_BlackHole.uasset'
+[2019.08.10-18.37.14:197][292]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/BP_BlackHole.BP_BlackHole
+[2019.08.10-18.37.14:618][292]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 121 classes and 0 folders.
+[2019.08.10-18.37.15:810][293]LogRenderer: Reallocating scene render targets to support 1144x708 Format 10 NumSamples 1 (Frame:1).
+[2019.08.10-18.37.24:845][664]LogSlate: Took 0.019115 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.08.10-18.37.28:962][155]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.44.15:382][615]Candidate modules for hot reload:
+[2019.08.10-18.44.15:382][615]  MakeItCount
+[2019.08.10-18.44.15:382][615]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=MakeItCount,5938 Win64 Development -TargetType=Editor -Project="C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject" "C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject"  -IgnoreJunk]
+[2019.08.10-18.44.15:402][615]Warning: Starting HotReload took  0.0s.
+[2019.08.10-18.45.02:561][201]CompilerResultsLog: New page: Compilation - Aug 10, 2019, 10:45:02 AM
+[2019.08.10-18.45.02:561][201]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019).
+[2019.08.10-18.45.02:561][201]CompilerResultsLog: Creating makefile for MakeItCountEditor (ini files are newer than makefile)
+[2019.08.10-18.45.02:562][201]CompilerResultsLog: Parsing headers for MakeItCountEditor
+[2019.08.10-18.45.02:562][201]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\MakeItCount.uproject" "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\MakeItCountEditor\Development\MakeItCountEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.08.10-18.45.02:563][201]CompilerResultsLog: Reflection code generated for MakeItCountEditor in 34.7685348 seconds
+[2019.08.10-18.45.02:563][201]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.08.10-18.45.02:563][201]CompilerResultsLog: Building 6 actions with 12 processes...
+[2019.08.10-18.45.02:563][201]CompilerResultsLog:   [1/6] BABlackHoleActor.cpp
+[2019.08.10-18.45.02:563][201]CompilerResultsLog:   [2/6] BABlackHoleActor.gen.cpp
+[2019.08.10-18.45.02:564][201]CompilerResultsLog:   [3/6] MakeItCount.init.gen.cpp
+[2019.08.10-18.45.02:564][201]CompilerResultsLog:   [4/6] UE4Editor-MakeItCount-5938.lib
+[2019.08.10-18.45.02:564][201]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-5938.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-5938.exp
+[2019.08.10-18.45.02:565][201]CompilerResultsLog:   [5/6] UE4Editor-MakeItCount-5938.dll
+[2019.08.10-18.45.02:565][201]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-5938.suppressed.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-5938.suppressed.exp
+[2019.08.10-18.45.02:566][201]CompilerResultsLog:   [6/6] MakeItCountEditor.target
+[2019.08.10-18.45.02:566][201]CompilerResultsLog: Total time in Parallel executor: 4.21 seconds
+[2019.08.10-18.45.02:566][201]CompilerResultsLog: Total execution time: 46.90 seconds
+[2019.08.10-18.45.02:566][201]LogMainFrame: MainFrame: Module compiling took 47.188 seconds
+[2019.08.10-18.45.02:616][201]LogUObjectHash: Compacting FUObjectHashTables data took   3.66ms
+[2019.08.10-18.45.02:635][201]LogClass: Could not find existing class BABlackHoleActor in package /Script/MakeItCount for HotReload, assuming new class
+[2019.08.10-18.45.02:928][201]LogHotReload: Re-instancing BABlackHoleActor after hot-reload.
+[2019.08.10-18.45.03:548][201]LogContentBrowser: Native class hierarchy updated for 'MakeItCount' in 0.0005 seconds. Added 1 classes and 3 folders.
+[2019.08.10-18.45.03:553][201]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.08.10-18.45.03:598][201]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
+[2019.08.10-18.45.03:608][201]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-18.45.03:615][201]Display: HotReload took 48.2s.
+[2019.08.10-18.45.35:188][278]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.45.37:739][570]Cmd: TRANSACTION UNDO
+[2019.08.10-18.45.37:739][570]LogEditorTransaction: Undo Edit Gravity Radius
+[2019.08.10-18.45.48:862][910]Candidate modules for hot reload:
+[2019.08.10-18.45.48:862][910]  MakeItCount
+[2019.08.10-18.45.48:862][910]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=MakeItCount,6027 Win64 Development -TargetType=Editor -Project="C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject" "C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject"  -IgnoreJunk]
+[2019.08.10-18.45.48:890][910]Warning: Starting HotReload took  0.0s.
+[2019.08.10-18.46.14:405][ 33]LogUObjectHash: Compacting FUObjectHashTables data took   5.47ms
+[2019.08.10-18.46.14:521][ 33]LogSavePackage: Moving '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Untitled_1_Auto12774AEDF4407237D6E9182B51F94E352.tmp' to '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
+[2019.08.10-18.46.14:527][ 33]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.188
+[2019.08.10-18.46.14:527][ 33]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.188
+[2019.08.10-18.46.32:488][ 88]CompilerResultsLog: New page: Compilation - Aug 10, 2019, 10:46:32 AM
+[2019.08.10-18.46.32:489][ 88]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019).
+[2019.08.10-18.46.32:489][ 88]CompilerResultsLog: Parsing headers for MakeItCountEditor
+[2019.08.10-18.46.32:489][ 88]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\MakeItCount.uproject" "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\MakeItCountEditor\Development\MakeItCountEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.08.10-18.46.32:490][ 88]CompilerResultsLog: Reflection code generated for MakeItCountEditor in 36.297408 seconds
+[2019.08.10-18.46.32:490][ 88]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog: Building 6 actions with 12 processes...
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog:   [1/6] BABlackHoleActor.cpp
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog:   [2/6] MakeItCount.init.gen.cpp
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog:   [3/6] BABlackHoleActor.gen.cpp
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog:   [4/6] UE4Editor-MakeItCount-6027.lib
+[2019.08.10-18.46.32:491][ 88]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-6027.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-6027.exp
+[2019.08.10-18.46.32:492][ 88]CompilerResultsLog:   [5/6] UE4Editor-MakeItCount-6027.dll
+[2019.08.10-18.46.32:492][ 88]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-6027.suppressed.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-6027.suppressed.exp
+[2019.08.10-18.46.32:492][ 88]CompilerResultsLog:   [6/6] MakeItCountEditor.target
+[2019.08.10-18.46.32:492][ 88]CompilerResultsLog: Total time in Parallel executor: 2.45 seconds
+[2019.08.10-18.46.32:493][ 88]CompilerResultsLog: Total execution time: 43.44 seconds
+[2019.08.10-18.46.32:493][ 88]LogMainFrame: MainFrame: Module compiling took 43.633 seconds
+[2019.08.10-18.46.32:539][ 88]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2019.08.10-18.46.32:555][ 88]LogClass: Could not find existing class BABlackHoleActor in package /Script/MakeItCount for HotReload, assuming new class
+[2019.08.10-18.46.32:565][ 88]LogHotReload: Re-instancing BABlackHoleActor after hot-reload.
+[2019.08.10-18.46.33:035][ 88]LogContentBrowser: Native class hierarchy updated for 'MakeItCount' in 0.0005 seconds. Added 1 classes and 3 folders.
+[2019.08.10-18.46.33:041][ 88]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.08.10-18.46.33:089][ 88]LogUObjectHash: Compacting FUObjectHashTables data took   5.62ms
+[2019.08.10-18.46.33:100][ 88]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-18.46.33:106][ 88]Display: HotReload took 44.3s.
+[2019.08.10-18.47.28:493][273]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.47.29:464][386]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.48.16:207][837]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.48.23:578][715]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.48.30:878][572]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.48.31:663][663]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-18.48.34:885][ 42]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (SkySphereMesh)
+[2019.08.10-18.48.35:203][ 76]LogEditorViewport: Clicking on Actor (double click): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.48.35:546][115]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-18.48.40:072][648]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.04.31:706][ 61]Candidate modules for hot reload:
+[2019.08.10-19.04.31:706][ 61]  MakeItCount
+[2019.08.10-19.04.31:706][ 61]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=MakeItCount,581 Win64 Development -TargetType=Editor -Project="C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject" "C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject"  -IgnoreJunk]
+[2019.08.10-19.04.31:714][ 61]Warning: Starting HotReload took  0.0s.
+[2019.08.10-19.05.18:964][249]CompilerResultsLog: New page: Compilation - Aug 10, 2019, 11:05:18 AM
+[2019.08.10-19.05.18:964][249]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019).
+[2019.08.10-19.05.18:965][249]CompilerResultsLog: Creating makefile for MakeItCountEditor (ini files are newer than makefile)
+[2019.08.10-19.05.18:965][249]CompilerResultsLog: Parsing headers for MakeItCountEditor
+[2019.08.10-19.05.18:965][249]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\MakeItCount.uproject" "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\MakeItCountEditor\Development\MakeItCountEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.08.10-19.05.18:966][249]CompilerResultsLog: Reflection code generated for MakeItCountEditor in 32.5424406 seconds
+[2019.08.10-19.05.18:966][249]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.08.10-19.05.18:967][249]CompilerResultsLog: Building 6 actions with 12 processes...
+[2019.08.10-19.05.18:967][249]CompilerResultsLog:   [1/6] MakeItCount.init.gen.cpp
+[2019.08.10-19.05.18:967][249]CompilerResultsLog:   [2/6] BABlackHoleActor.gen.cpp
+[2019.08.10-19.05.18:967][249]CompilerResultsLog:   [3/6] BABlackHoleActor.cpp
+[2019.08.10-19.05.18:967][249]CompilerResultsLog:   [4/6] UE4Editor-MakeItCount-0581.lib
+[2019.08.10-19.05.18:968][249]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-0581.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-0581.exp
+[2019.08.10-19.05.18:968][249]CompilerResultsLog:   [5/6] UE4Editor-MakeItCount-0581.dll
+[2019.08.10-19.05.18:969][249]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-0581.suppressed.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-0581.suppressed.exp
+[2019.08.10-19.05.18:969][249]CompilerResultsLog:   [6/6] MakeItCountEditor.target
+[2019.08.10-19.05.18:970][249]CompilerResultsLog: Total time in Parallel executor: 10.10 seconds
+[2019.08.10-19.05.18:970][249]CompilerResultsLog: Total execution time: 47.02 seconds
+[2019.08.10-19.05.18:970][249]LogMainFrame: MainFrame: Module compiling took 47.268 seconds
+[2019.08.10-19.05.19:058][249]LogUObjectHash: Compacting FUObjectHashTables data took   5.37ms
+[2019.08.10-19.05.19:068][249]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-19.05.19:074][249]Display: HotReload took 47.4s.
+[2019.08.10-19.42.23:637][264]LogActorFactory: Actor Factory created Cube
+[2019.08.10-19.42.24:789][319]LogActorFactory: Actor Factory created Cube
+[2019.08.10-19.42.35:496][352]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.42.37:861][515]LogTemp: Repeating last play command: Selected Viewport
+[2019.08.10-19.42.38:299][515]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.42.38:315][515]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.42.38:316][515]PIE: New page: PIE session: Untitled_1 (Aug 10, 2019, 11:42:38 AM)
+[2019.08.10-19.42.38:438][515]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.42.38:478][515]LogPlayLevel: PIE: StaticDuplicateObject took: (0.040264s)
+[2019.08.10-19.42.38:480][515]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.42.38:493][515]LogPlayLevel: PIE: World Init took: (0.014156s)
+[2019.08.10-19.42.38:493][515]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.055143s)
+[2019.08.10-19.42.39:000][515]LogUObjectHash: Compacting FUObjectHashTables data took  20.16ms
+[2019.08.10-19.42.39:026][515]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.42.39:038][515]LogInit: FAudioDevice initialized.
+[2019.08.10-19.42.39:352][515]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.42.39:431][515]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.42.39
+[2019.08.10-19.42.39:459][515]LogWorld: Bringing up level for play took: 0.028618
+[2019.08.10-19.42.39:740][515]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 20 classes and 0 folders.
+[2019.08.10-19.42.39:777][515]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.814
+[2019.08.10-19.42.39:777][515]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.42.50:876][198]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.42.51:004][210]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.42.51:047][210]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.42.51:118][210]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.42.51:118][210]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.42.51:208][210]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.42.51:352][210]LogUObjectHash: Compacting FUObjectHashTables data took  10.99ms
+[2019.08.10-19.42.51:606][211]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2019.08.10-19.43.00:591][966]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.08.10-19.43.03:767][346]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.03:768][346]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.43.03:768][346]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 11:43:03 AM)
+[2019.08.10-19.43.03:768][346]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.43.03:771][346]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002619s)
+[2019.08.10-19.43.03:772][346]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.43.03:857][346]LogPlayLevel: PIE: World Init took: (0.085564s)
+[2019.08.10-19.43.03:857][346]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.089068s)
+[2019.08.10-19.43.04:005][346]LogUObjectHash: Compacting FUObjectHashTables data took   6.16ms
+[2019.08.10-19.43.04:032][346]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.43.04:047][346]LogInit: FAudioDevice initialized.
+[2019.08.10-19.43.04:047][346]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.08.10-19.43.04:108][346]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.43.04:109][346]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.43.04
+[2019.08.10-19.43.04:110][346]LogWorld: Bringing up level for play took: 0.000727
+[2019.08.10-19.43.04:152][346]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 1.189
+[2019.08.10-19.43.04:424][346]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.16:572][668]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.08.10-19.43.17:595][739]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.43.17:698][751]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.17:698][751]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.43.17:728][751]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.43.17:729][751]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.17:794][751]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.43.17:802][751]LogUObjectHash: Compacting FUObjectHashTables data took   4.33ms
+[2019.08.10-19.43.17:838][752]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.08.10-19.43.20:913][105]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.08.10-19.43.21:347][141]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2019.08.10-19.43.35:770][841]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.43.36:923][955]LogTemp: Repeating last play command: Simulate
+[2019.08.10-19.43.36:934][955]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.36:935][955]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.43.36:935][955]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 11:43:36 AM)
+[2019.08.10-19.43.36:935][955]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.43.36:938][955]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002519s)
+[2019.08.10-19.43.36:938][955]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.43.36:938][955]LogPlayLevel: PIE: World Init took: (0.000654s)
+[2019.08.10-19.43.36:939][955]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003540s)
+[2019.08.10-19.43.36:994][955]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2019.08.10-19.43.37:008][955]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.43.37:017][955]LogInit: FAudioDevice initialized.
+[2019.08.10-19.43.37:046][955]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.43.37:047][955]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.43.37
+[2019.08.10-19.43.37:047][955]LogWorld: Bringing up level for play took: 0.000865
+[2019.08.10-19.43.37:060][955]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.097
+[2019.08.10-19.43.37:119][955]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.46:874][ 31]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.43.46:958][ 41]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.46:959][ 41]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.43.46:991][ 41]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.43.46:992][ 41]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.43.47:154][ 41]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.43.47:161][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
+[2019.08.10-19.43.47:192][ 42]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.08.10-19.44.02:470][531]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.44.02:562][541]Candidate modules for hot reload:
+[2019.08.10-19.44.02:562][541]  MakeItCount
+[2019.08.10-19.44.02:562][541]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=MakeItCount,8378 Win64 Development -TargetType=Editor -Project="C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject" "C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject"  -IgnoreJunk]
+[2019.08.10-19.44.02:586][541]Warning: Starting HotReload took  0.0s.
+[2019.08.10-19.44.28:790][676]LogUObjectHash: Compacting FUObjectHashTables data took   1.42ms
+[2019.08.10-19.44.30:148][676]LogSavePackage: Moving '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Untitled_1_Auto2575075F14EDF9F5DBA8082B6A2E4E5FE.tmp' to '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Autosaves/Temp/Untitled_1_Auto2.umap'
+[2019.08.10-19.44.30:161][676]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 1.570
+[2019.08.10-19.44.30:161][676]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.570
+[2019.08.10-19.44.44:662][721]CompilerResultsLog: New page: Compilation - Aug 10, 2019, 11:44:44 AM
+[2019.08.10-19.44.44:662][721]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019).
+[2019.08.10-19.44.44:662][721]CompilerResultsLog: Creating makefile for MakeItCountEditor (ini files are newer than makefile)
+[2019.08.10-19.44.44:662][721]CompilerResultsLog: Parsing headers for MakeItCountEditor
+[2019.08.10-19.44.44:663][721]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\MakeItCount.uproject" "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\MakeItCountEditor\Development\MakeItCountEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.08.10-19.44.44:663][721]CompilerResultsLog: Reflection code generated for MakeItCountEditor in 34.2040004 seconds
+[2019.08.10-19.44.44:664][721]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.08.10-19.44.44:664][721]CompilerResultsLog: Building 4 actions with 12 processes...
+[2019.08.10-19.44.44:664][721]CompilerResultsLog:   [1/4] BABlackHoleActor.cpp
+[2019.08.10-19.44.44:664][721]CompilerResultsLog:   [2/4] UE4Editor-MakeItCount-8378.lib
+[2019.08.10-19.44.44:664][721]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8378.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8378.exp
+[2019.08.10-19.44.44:665][721]CompilerResultsLog:   [3/4] UE4Editor-MakeItCount-8378.dll
+[2019.08.10-19.44.44:665][721]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8378.suppressed.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8378.suppressed.exp
+[2019.08.10-19.44.44:666][721]CompilerResultsLog:   [4/4] MakeItCountEditor.target
+[2019.08.10-19.44.44:666][721]CompilerResultsLog: Total time in Parallel executor: 3.54 seconds
+[2019.08.10-19.44.44:666][721]CompilerResultsLog: Total execution time: 41.86 seconds
+[2019.08.10-19.44.44:667][721]LogMainFrame: MainFrame: Module compiling took 42.107 seconds
+[2019.08.10-19.44.45:049][721]LogUObjectHash: Compacting FUObjectHashTables data took 101.52ms
+[2019.08.10-19.44.45:416][721]LogClass: Could not find existing class BABlackHoleActor in package /Script/MakeItCount for HotReload, assuming new class
+[2019.08.10-19.44.45:476][721]LogHotReload: Re-instancing BABlackHoleActor after hot-reload.
+[2019.08.10-19.44.46:212][721]LogContentBrowser: Native class hierarchy updated for 'MakeItCount' in 0.0007 seconds. Added 1 classes and 3 folders.
+[2019.08.10-19.44.46:218][721]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.08.10-19.44.46:366][721]LogUObjectHash: Compacting FUObjectHashTables data took   3.94ms
+[2019.08.10-19.44.46:381][721]LogContentBrowser: Native class hierarchy populated in 0.0149 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-19.44.46:391][721]Display: HotReload took 43.8s.
+[2019.08.10-19.45.19:058][889]LogTemp: Repeating last play command: Simulate
+[2019.08.10-19.45.19:073][889]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.19:073][889]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.45.19:083][889]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 11:45:19 AM)
+[2019.08.10-19.45.19:083][889]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.45.19:086][889]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002433s)
+[2019.08.10-19.45.19:086][889]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.45.19:086][889]LogPlayLevel: PIE: World Init took: (0.000692s)
+[2019.08.10-19.45.19:086][889]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003507s)
+[2019.08.10-19.45.19:166][889]LogUObjectHash: Compacting FUObjectHashTables data took   4.53ms
+[2019.08.10-19.45.19:182][889]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.45.19:194][889]LogInit: FAudioDevice initialized.
+[2019.08.10-19.45.19:225][889]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.45.19:226][889]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.45.19
+[2019.08.10-19.45.19:226][889]LogWorld: Bringing up level for play took: 0.000767
+[2019.08.10-19.45.19:259][889]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.297
+[2019.08.10-19.45.19:304][889]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.23:301][323]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.23:302][323]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.45.23:334][323]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.45.23:335][323]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.23:435][323]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.45.23:455][323]LogUObjectHash: Compacting FUObjectHashTables data took   3.80ms
+[2019.08.10-19.45.23:474][324]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2019.08.10-19.45.26:613][682]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.45.26:746][698]LogTemp: Repeating last play command: Simulate
+[2019.08.10-19.45.26:772][698]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.26:772][698]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.45.26:772][698]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 11:45:26 AM)
+[2019.08.10-19.45.26:772][698]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.45.26:775][698]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002355s)
+[2019.08.10-19.45.26:775][698]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.45.26:776][698]LogPlayLevel: PIE: World Init took: (0.000614s)
+[2019.08.10-19.45.26:776][698]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003311s)
+[2019.08.10-19.45.26:815][698]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2019.08.10-19.45.26:829][698]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.45.26:840][698]LogInit: FAudioDevice initialized.
+[2019.08.10-19.45.26:872][698]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.45.26:873][698]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.45.26
+[2019.08.10-19.45.26:873][698]LogWorld: Bringing up level for play took: 0.000719
+[2019.08.10-19.45.26:907][698]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.056
+[2019.08.10-19.45.26:909][698]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.45.36:264][ 59]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2019.08.10-19.45.51:864][872]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.47.21:018][643]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.47.28:870][549]Cmd: DELETE
+[2019.08.10-19.47.28:870][549]Cmd: ACTOR DELETE
+[2019.08.10-19.47.29:256][549]LogEditorActor: Deleted Actor: BP_BlackHole_C
+[2019.08.10-19.47.29:319][549]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2019.08.10-19.47.29:319][549]LogEditorActor: Deleted 1 Actors (0.148 secs)
+[2019.08.10-19.47.33:870][ 86]Cmd: TRANSACTION UNDO
+[2019.08.10-19.47.33:870][ 86]LogEditorTransaction: Undo Clicking on Actors
+[2019.08.10-19.47.38:658][646]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.08.10-19.47.44:796][327]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.08.10-19.47.46:070][466]Cmd: TRANSACTION UNDO
+[2019.08.10-19.47.46:071][466]LogEditorTransaction: Undo Clicking on Actors
+[2019.08.10-19.47.47:626][604]Cmd: TRANSACTION REDO
+[2019.08.10-19.47.47:627][604]LogEditorTransaction: Redo Clicking on Actors
+[2019.08.10-19.47.51:167][979]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.03:382][335]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.06:747][701]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.06:848][713]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.06:849][713]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.48.06:877][713]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.48.06:878][713]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.06:918][713]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.48.06:923][713]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2019.08.10-19.48.06:954][716]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2019.08.10-19.48.13:179][442]LogAssetEditorManager: Opening Asset editor for Blueprint /Engine/EngineSky/BP_Sky_Sphere.BP_Sky_Sphere
+[2019.08.10-19.48.13:831][442]LogSlate: Took 0.018432 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.08.10-19.48.17:029][696]LogSlate: Window 'BP_Sky_Sphere' being destroyed
+[2019.08.10-19.48.23:339][411]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.29:027][ 78]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.29:118][ 89]LogTemp: Repeating last play command: Simulate
+[2019.08.10-19.48.29:155][ 89]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.29:156][ 89]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-19.48.29:156][ 89]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 11:48:29 AM)
+[2019.08.10-19.48.29:156][ 89]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-19.48.29:159][ 89]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002641s)
+[2019.08.10-19.48.29:160][ 89]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-19.48.29:160][ 89]LogPlayLevel: PIE: World Init took: (0.000643s)
+[2019.08.10-19.48.29:160][ 89]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003674s)
+[2019.08.10-19.48.29:202][ 89]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2019.08.10-19.48.29:218][ 89]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-19.48.29:229][ 89]LogInit: FAudioDevice initialized.
+[2019.08.10-19.48.29:260][ 89]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-19.48.29:261][ 89]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-15.48.29
+[2019.08.10-19.48.29:262][ 89]LogWorld: Bringing up level for play took: 0.001333
+[2019.08.10-19.48.29:275][ 89]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.312
+[2019.08.10-19.48.29:305][ 89]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.32:990][509]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-19.48.33:057][517]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.33:058][517]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.48.33:089][517]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-19.48.33:090][517]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-19.48.33:139][517]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-19.48.33:144][517]LogUObjectHash: Compacting FUObjectHashTables data took   2.64ms
+[2019.08.10-19.48.33:160][518]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2019.08.10-19.48.39:007][193]Cmd: DELETE
+[2019.08.10-19.48.39:007][193]Cmd: ACTOR DELETE
+[2019.08.10-19.48.39:009][193]LogEditorActor: Deleted Actor: BP_BlackHole_C
+[2019.08.10-19.48.39:051][193]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2019.08.10-19.48.39:052][193]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2019.08.10-19.49.57:767][586]LogHotReload: New module detected: UE4Editor-MakeItCount-0008.dll
+[2019.08.10-19.49.58:855][590]LogHotReload: Starting Hot-Reload from IDE
+[2019.08.10-19.49.58:909][590]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2019.08.10-19.49.58:938][590]LogContentBrowser: Native class hierarchy updated for 'MakeItCount' in 0.0005 seconds. Added 1 classes and 3 folders.
+[2019.08.10-19.49.58:944][590]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.08.10-19.49.59:188][590]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2019.08.10-19.49.59:199][590]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-19.49.59:209][590]Display: HotReload took  0.4s.
+[2019.08.10-19.57.19:628][756]LogUObjectHash: Compacting FUObjectHashTables data took   5.00ms
+[2019.08.10-19.57.19:913][756]LogSavePackage: Moving '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Untitled_1_Auto3548AFDE144DC432C189EA8AA2C6EDC42.tmp' to '../../../../../../Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/Saved/Autosaves/Temp/Untitled_1_Auto3.umap'
+[2019.08.10-19.57.19:920][756]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.647
+[2019.08.10-19.57.19:920][756]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.647
+[2019.08.10-20.01.44:407][651]LogTemp: Repeating last play command: Simulate
+[2019.08.10-20.01.44:420][651]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.01.44:421][651]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-20.01.44:421][651]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 12:01:44 PM)
+[2019.08.10-20.01.44:421][651]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-20.01.44:424][651]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002555s)
+[2019.08.10-20.01.44:424][651]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-20.01.44:425][651]LogPlayLevel: PIE: World Init took: (0.000647s)
+[2019.08.10-20.01.44:425][651]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003568s)
+[2019.08.10-20.01.44:499][651]LogUObjectHash: Compacting FUObjectHashTables data took   4.45ms
+[2019.08.10-20.01.44:518][651]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-20.01.44:601][651]LogInit: FAudioDevice initialized.
+[2019.08.10-20.01.44:631][651]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-20.01.44:632][651]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-16.01.44
+[2019.08.10-20.01.44:633][651]LogWorld: Bringing up level for play took: 0.001223
+[2019.08.10-20.01.44:646][651]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.317
+[2019.08.10-20.01.44:685][651]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.01.48:702][130]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.01.48:703][130]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-20.01.48:732][130]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-20.01.48:732][130]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.01.48:774][130]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-20.01.48:779][130]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2019.08.10-20.01.48:810][133]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2019.08.10-20.01.54:329][315]Candidate modules for hot reload:
+[2019.08.10-20.01.54:329][315]  MakeItCount
+[2019.08.10-20.01.54:329][315]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=MakeItCount,8399 Win64 Development -TargetType=Editor -Project="C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject" "C:/Users/Siege/Documents/Projects/BearAttackGames/UE4Jam2019/MakeItCount/MakeItCount.uproject"  -IgnoreJunk]
+[2019.08.10-20.01.54:357][315]Warning: Starting HotReload took  0.1s.
+[2019.08.10-20.03.49:403][752]CompilerResultsLog: New page: Compilation - Aug 10, 2019, 12:03:49 PM
+[2019.08.10-20.03.49:404][752]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019).
+[2019.08.10-20.03.49:404][752]CompilerResultsLog: Creating makefile for MakeItCountEditor (ini files are newer than makefile)
+[2019.08.10-20.03.49:404][752]CompilerResultsLog: Parsing headers for MakeItCountEditor
+[2019.08.10-20.03.49:405][752]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\MakeItCount.uproject" "C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\MakeItCountEditor\Development\MakeItCountEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.08.10-20.03.49:405][752]CompilerResultsLog: Reflection code generated for MakeItCountEditor in 33.2262136 seconds
+[2019.08.10-20.03.49:406][752]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.08.10-20.03.49:406][752]CompilerResultsLog: Building 4 actions with 12 processes...
+[2019.08.10-20.03.49:435][752]CompilerResultsLog:   [1/4] BABlackHoleActor.cpp
+[2019.08.10-20.03.49:435][752]CompilerResultsLog:   [2/4] UE4Editor-MakeItCount-8399.lib
+[2019.08.10-20.03.49:435][752]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8399.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8399.exp
+[2019.08.10-20.03.49:436][752]CompilerResultsLog:   [3/4] UE4Editor-MakeItCount-8399.dll
+[2019.08.10-20.03.49:436][752]CompilerResultsLog:      Creating library C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8399.suppressed.lib and object C:\Users\Siege\Documents\Projects\BearAttackGames\UE4Jam2019\MakeItCount\Intermediate\Build\Win64\UE4Editor\Development\MakeItCount\UE4Editor-MakeItCount-8399.suppressed.exp
+[2019.08.10-20.03.49:436][752]CompilerResultsLog:   [4/4] MakeItCountEditor.target
+[2019.08.10-20.03.49:436][752]CompilerResultsLog: Total time in Parallel executor: 78.49 seconds
+[2019.08.10-20.03.49:436][752]CompilerResultsLog: Total execution time: 114.48 seconds
+[2019.08.10-20.03.49:436][752]LogMainFrame: MainFrame: Module compiling took 115.112 seconds
+[2019.08.10-20.03.49:477][752]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2019.08.10-20.03.49:676][752]LogContentBrowser: Native class hierarchy updated for 'MakeItCount' in 0.0006 seconds. Added 1 classes and 3 folders.
+[2019.08.10-20.03.49:682][752]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2019.08.10-20.03.49:770][752]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2019.08.10-20.03.49:781][752]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 2734 classes and 664 folders.
+[2019.08.10-20.03.49:788][752]Display: HotReload took 115.5s.
+[2019.08.10-20.03.54:474][881]LogTemp: Repeating last play command: Simulate
+[2019.08.10-20.03.54:488][881]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.03.54:489][881]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.08.10-20.03.54:489][881]PIE: New page: SIE session: Untitled_1 (Aug 10, 2019, 12:03:54 PM)
+[2019.08.10-20.03.54:489][881]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.08.10-20.03.54:492][881]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002500s)
+[2019.08.10-20.03.54:492][881]LogAIModule: Creating AISystem for world Untitled_1
+[2019.08.10-20.03.54:492][881]LogPlayLevel: PIE: World Init took: (0.000658s)
+[2019.08.10-20.03.54:492][881]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003549s)
+[2019.08.10-20.03.54:569][881]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
+[2019.08.10-20.03.54:583][881]LogInit: XAudio2 using '3 - SyncMaster (AMD High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.08.10-20.03.54:594][881]LogInit: FAudioDevice initialized.
+[2019.08.10-20.03.54:626][881]LogLoad: Game class is 'GameModeBase'
+[2019.08.10-20.03.54:628][881]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.08.10-16.03.54
+[2019.08.10-20.03.54:628][881]LogWorld: Bringing up level for play took: 0.001162
+[2019.08.10-20.03.54:641][881]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.322
+[2019.08.10-20.03.54:643][881]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.04.13:815][162]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.08.10-20.04.14:060][178]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.08.10-20.04.15:358][318]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-20.04.24:144][327]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.08.10-20.04.24:248][339]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.04.24:249][339]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-20.04.24:283][339]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.08.10-20.04.24:283][339]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_1.Untitled_1:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_1.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_1.Untitled_1:PersistentLevel.Untitled'
+[2019.08.10-20.04.24:331][339]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.08.10-20.04.24:355][339]LogUObjectHash: Compacting FUObjectHashTables data took   3.88ms
+[2019.08.10-20.04.24:371][340]LogPlayLevel: Display: Destroying online subsystem :Context_12
