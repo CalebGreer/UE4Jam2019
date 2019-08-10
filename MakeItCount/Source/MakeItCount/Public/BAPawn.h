@@ -6,6 +6,10 @@
 #include "GameFramework/Pawn.h"
 #include "BAPawn.generated.h"
 
+// Forward Declarations
+class USpringArmComponent;
+class UCameraComponent;
+
 UCLASS()
 class MAKEITCOUNT_API ABAPawn : public APawn
 {
@@ -26,6 +30,10 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UPROPERTY(VisibleAnywhere, Category = "Setup")
-	float test = 100.f;
+private:
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void Rotate(float _value);
+
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	float MaxDegreesPerSecond = 15;
 };
