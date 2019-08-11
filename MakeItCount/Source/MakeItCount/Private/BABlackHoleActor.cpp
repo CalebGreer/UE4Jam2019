@@ -22,7 +22,8 @@ ABABlackHoleActor::ABABlackHoleActor()
 
 	DestroyerComp = CreateDefaultSubobject<USphereComponent>(TEXT("Destroyer"));
 	DestroyerComp->SetupAttachment(MeshComp);
-	GravityCollider->SetSphereRadius(GravityRadius);
+	DestroyerComp->SetSphereRadius(DestroyRadius);
+	DestroyerComp->OnComponentBeginOverlap.AddDynamic(this, &ABABlackHoleActor::OverlapInnerSphere);
 }
 
 // Called when the game starts or when spawned
@@ -40,9 +41,16 @@ void ABABlackHoleActor::GravityTick()
 	{ 
 		if (comp->IsSimulatingPhysics())
 		{
-			//FVector dir = ((comp->GetComponentLocation() - GetActorLocation()).GetSafeNormal()) * Power;
 			comp->AddRadialForce(GetActorLocation(), GravityCollider->GetScaledSphereRadius(), -PullingForce, ERadialImpulseFalloff::RIF_Constant, true);
 		}
+	}
+}
+
+void ABABlackHoleActor::OverlapInnerSphere(UPrimitiveComponent * OverlappedComponent, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+{
+	if (OtherActor)
+	{
+		OtherActor->Destroy();
 	}
 }
 
