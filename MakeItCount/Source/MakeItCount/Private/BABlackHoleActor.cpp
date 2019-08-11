@@ -40,7 +40,7 @@ void ABABlackHoleActor::GravityTick()
 	{ 
 		if (comp->IsSimulatingPhysics())
 		{
-			FVector dir = ((comp->GetComponentLocation() - GetActorLocation()).GetSafeNormal()) * Power;
+			//FVector dir = ((comp->GetComponentLocation() - GetActorLocation()).GetSafeNormal()) * Power;
 			comp->AddRadialForce(GetActorLocation(), GravityCollider->GetScaledSphereRadius(), -PullingForce, ERadialImpulseFalloff::RIF_Constant, true);
 		}
 	}
