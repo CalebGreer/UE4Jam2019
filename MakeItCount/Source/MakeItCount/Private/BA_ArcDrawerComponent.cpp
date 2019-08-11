@@ -18,15 +18,19 @@ UBA_ArcDrawerComponent::UBA_ArcDrawerComponent()
 	MaxTimeInterval = 0.5f;
 	TimeStep = 0.1f;
 
+	//reserve a block of memory
 	BallArray.Reserve(5);
 
 }
 
+
+//calculates the x displacement
 float UBA_ArcDrawerComponent::CalculateDisplacementX(const float &initialVelocity, const float &time)
 {
 	return initialVelocity * time;
 }
 
+//calculate the Y displacement(Z in unreal)
 float UBA_ArcDrawerComponent::CalculateDisplacementY(const float & initialVelocityY, const float & time, const float & gravity)
 {
 	return (initialVelocityY * time) + (0.5 * gravity * (time * time));
@@ -37,27 +41,28 @@ void UBA_ArcDrawerComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-
+	//initial set up 
 	AActor* MyOwner = this->GetOwner();
 	UWorld* World = MyOwner->GetWorld();
 	Gravity = World->GetGravityZ();
 
-	if (BallToSpawn != nullptr) {
+	FString OwnerName = MyOwner->GetName();
+	UE_LOG(LogClass, Warning, TEXT("This a testing statement. %s"), *OwnerName);
 
+	if (BallToSpawn != nullptr) 
+	{
+		//spawn the points and add them to the array
 		for (int i = 0; i < 5; i++)
 		{
-			FTransform ballSpawnTransform;
-			ballSpawnTransform.SetLocation(MyOwner->GetActorForwardVector() * 500.0f + MyOwner->GetActorLocation());
-
 			ABA_ball* spawnedBall = (ABA_ball*)World->SpawnActor<ABA_ball>(BallToSpawn);
+
+			//attach it to the owner so they turn with us
 			spawnedBall->AttachToActor(MyOwner, FAttachmentTransformRules::KeepRelativeTransform);
 
 			BallArray.Add(spawnedBall);
 		}
 	}
 
-	
 }
 
 
@@ -69,18 +74,16 @@ void UBA_ArcDrawerComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 	// ...
 
 	DrawArc(initVelocity);
-
-
-
 }
 
 void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 {
 	int i = 0;
-	for (float t = 0; t < MaxTimeInterval; t += TimeStep) {
-
-		ABA_ball* ball = BallArray[i];
+	for (float t = 0; t < MaxTimeInterval; t += TimeStep) 
+	{
 		//get the object from array
+		ABA_ball* ball = BallArray[i];
+		
 		FVector newPos = FVector(0.0f, 0.0f, 0.0f);
 
 		newPos.X = CalculateDisplacementX(initVelocity.X, t);
