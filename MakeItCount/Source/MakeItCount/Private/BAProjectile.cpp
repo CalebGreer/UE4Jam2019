@@ -25,7 +25,7 @@ ABAProjectile::ABAProjectile()
 
 void ABAProjectile::PlaySpawn()
 {
-	GetWorld()->SpawnActor<AActor>(BlackHoleBP);
+	GetWorld()->SpawnActor<AActor>(BlackHoleBP, GetTransform());
 }
 
 void ABAProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)

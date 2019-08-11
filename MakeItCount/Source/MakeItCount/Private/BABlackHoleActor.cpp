@@ -12,11 +12,11 @@ ABABlackHoleActor::ABABlackHoleActor()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	MeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Component"));
+	MeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
 	MeshComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	RootComponent = MeshComp;
  
-	GravityCollider = CreateDefaultSubobject<USphereComponent>(TEXT("Gravity Range"));
+	GravityCollider = CreateDefaultSubobject<USphereComponent>(TEXT("GravityRange"));
 	GravityCollider->SetSphereRadius(GravityRadius);
 	GravityCollider->SetupAttachment(MeshComp);
 
@@ -48,7 +48,7 @@ void ABABlackHoleActor::GravityTick()
 
 void ABABlackHoleActor::OverlapInnerSphere(UPrimitiveComponent * OverlappedComponent, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
-	if (OtherActor)
+	if (OtherActor && OtherActor != this)
 	{
 		OtherActor->Destroy();
 	}
