@@ -6,10 +6,6 @@
 #include "GameFramework/Pawn.h"
 #include "BAPawn.generated.h"
 
-// Forward Declarations
-class USpringArmComponent;
-class UCameraComponent;
-
 UCLASS()
 class MAKEITCOUNT_API ABAPawn : public APawn
 {
@@ -36,4 +32,10 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	float MaxDegreesPerSecond = 15;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	float MaxRotationAngle = 90;
+
+	float InitialYaw;
+	float HalfMaxRotation;
 };

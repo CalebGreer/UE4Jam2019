@@ -2,9 +2,6 @@
 
 
 #include "BAPawn.h"
-#include "GameFramework/PawnMovementComponent.h"
-#include "GameFramework/SpringArmComponent.h"
-#include "Camera/CameraComponent.h"
 #include "Components/SphereComponent.h"
 
 // Sets default values
@@ -19,7 +16,8 @@ void ABAPawn::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	
+	InitialYaw = GetActorRotation().Yaw;
+	HalfMaxRotation = MaxRotationAngle * 0.5f;
 }
 
 // Called every frame
@@ -43,7 +41,7 @@ void ABAPawn::Rotate(float RotationDirection)
 	auto RotationChange = RotationDirection * MaxDegreesPerSecond * GetWorld()->DeltaTimeSeconds;
 	auto Rotation = GetActorRotation();
 	Rotation.Yaw += RotationChange;
-	Rotation.Yaw = FMath::Clamp<float>(Rotation.Yaw, -45, 45);
+	Rotation.Yaw = FMath::Clamp<float>(Rotation.Yaw, (InitialYaw - HalfMaxRotation), (InitialYaw + HalfMaxRotation));
 
 	SetActorRelativeRotation(Rotation);
 }
