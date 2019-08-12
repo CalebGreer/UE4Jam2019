@@ -54,6 +54,7 @@ void UBAAimingComponent::Initialize(UBA_ArcDrawerComponent * ArcDrawerToSet, USt
 
 void UBAAimingComponent::Fire()
 {
+	if (Shots <= 0) { return; }
 	bCharging = false;
 	if (!ensure(ProjectileBlueprint)) { return; }
 	if (!ensure(Barrel)) { return; }

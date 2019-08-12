@@ -10,10 +10,10 @@
 ABAProjectile::ABAProjectile()
 {
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
-	//CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	//CollisionComp->InitSphereRadius(.2f);
-	//CollisionComp->SetCollisionProfileName("Projectile");
-	//CollisionComp->OnComponentHit.AddDynamic(this, &ABAProjectile::OnHit);
+	CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	CollisionComp->InitSphereRadius(.2f);
+	CollisionComp->SetCollisionProfileName("Projectile");
+	CollisionComp->OnComponentHit.AddDynamic(this, &ABAProjectile::OnHit);
 
 	RootComponent = CollisionComp;
 
