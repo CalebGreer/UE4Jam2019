@@ -40,6 +40,9 @@ protected:
 	UPROPERTY(EditInstanceOnly, Category = "Properties")
 	float PullingForce = 2000.0f;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Score")
+	int Kills = 0;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

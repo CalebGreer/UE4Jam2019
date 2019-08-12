@@ -51,6 +51,7 @@ void ABABlackHoleActor::OverlapInnerSphere(UPrimitiveComponent * OverlappedCompo
 	if (OtherActor && OtherActor != this)
 	{
 		OtherActor->Destroy();
+		Kills++;
 	}
 }
 
