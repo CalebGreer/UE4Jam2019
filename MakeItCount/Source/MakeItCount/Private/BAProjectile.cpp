@@ -10,17 +10,18 @@
 ABAProjectile::ABAProjectile()
 {
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
-	CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	CollisionComp->InitSphereRadius(5.0f);
-	CollisionComp->SetCollisionProfileName("Projectile");
-	CollisionComp->OnComponentHit.AddDynamic(this, &ABAProjectile::OnHit);
+	//CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	//CollisionComp->InitSphereRadius(.2f);
+	//CollisionComp->SetCollisionProfileName("Projectile");
+	//CollisionComp->OnComponentHit.AddDynamic(this, &ABAProjectile::OnHit);
 
 	RootComponent = CollisionComp;
 
 	MovementComp = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement"));
 	MovementComp->UpdatedComponent = CollisionComp;
-	MovementComp->InitialSpeed = 0.0f;
-	MovementComp->MaxSpeed = 0.0f; 
+	MovementComp->bAutoActivate = false;
+	//MovementComp->InitialSpeed = 0.0f;
+	//MovementComp->MaxSpeed = 0.0f; 
 }
 
 void ABAProjectile::PlaySpawn()
@@ -32,4 +33,10 @@ void ABAProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPri
 {
 	PlaySpawn();
 	Destroy();
+}
+
+void ABAProjectile::LaunchProjectile(float Speed)
+{
+	MovementComp->SetVelocityInLocalSpace(FVector::ForwardVector * Speed);
+	MovementComp->Activate();
 }

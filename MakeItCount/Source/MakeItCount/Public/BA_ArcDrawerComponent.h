@@ -46,5 +46,8 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Variables")
 	FVector initVelocity;
+
+	UFUNCTION(BlueprintCallable, Category = "Aiming")
+	void ChangeVelocity(float value);
 		
 };

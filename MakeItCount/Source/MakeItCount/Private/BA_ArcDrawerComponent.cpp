@@ -49,7 +49,7 @@ void UBA_ArcDrawerComponent::BeginPlay()
 	FString OwnerName = MyOwner->GetName();
 	UE_LOG(LogClass, Warning, TEXT("This a testing statement. %s"), *OwnerName);
 
-	if (BallToSpawn != nullptr) 
+	if (ensure(BallToSpawn)) 
 	{
 		//spawn the points and add them to the array
 		for (int i = 0; i < 5; i++)
@@ -78,6 +78,8 @@ void UBA_ArcDrawerComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 
 void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 {
+	if (!ensure(BallToSpawn)) { return; }
+
 	int i = 0;
 	for (float t = 0; t < MaxTimeInterval; t += TimeStep) 
 	{
@@ -93,6 +95,10 @@ void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 		ball->SetActorRelativeLocation(newPos);
 		i++;
 	}
+}
 
+void UBA_ArcDrawerComponent::ChangeVelocity(float value)
+{
+	initVelocity = FVector(value, 0, value);
 }
 
