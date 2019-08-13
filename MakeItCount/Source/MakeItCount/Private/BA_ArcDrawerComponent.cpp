@@ -25,15 +25,15 @@ UBA_ArcDrawerComponent::UBA_ArcDrawerComponent()
 
 
 //calculates the x displacement
-float UBA_ArcDrawerComponent::CalculateDisplacementX(const float &initialVelocity, const float &time)
+float UBA_ArcDrawerComponent::CalculateDisplacementX(const float &initialVelocity, const float &time, const float &angle)
 {
-	return initialVelocity * time;
+	return initialVelocity * time * FMath::Cos(angle);
 }
 
 //calculate the Y displacement(Z in unreal)
-float UBA_ArcDrawerComponent::CalculateDisplacementY(const float & initialVelocityY, const float & time, const float & gravity)
+float UBA_ArcDrawerComponent::CalculateDisplacementY(const float & initialVelocityY, const float & time, const float & gravity, const float &angle)
 {
-	return (initialVelocityY * time) + (0.5 * gravity * (time * time));
+	return (initialVelocityY * time * FMath::Sin(angle)) + ((0.5 * gravity) * (time * time));
 }
 
 // Called when the game starts
@@ -42,14 +42,14 @@ void UBA_ArcDrawerComponent::BeginPlay()
 	Super::BeginPlay();
 
 	//initial set up 
-	AActor* MyOwner = this->GetOwner();
+	MyOwner = this->GetOwner();
 	UWorld* World = MyOwner->GetWorld();
 	Gravity = World->GetGravityZ();
 
 	FString OwnerName = MyOwner->GetName();
 	UE_LOG(LogClass, Warning, TEXT("This a testing statement. %s"), *OwnerName);
 
-	if (BallToSpawn != nullptr) 
+	if (ensure(BallToSpawn)) 
 	{
 		//spawn the points and add them to the array
 		for (int i = 0; i < 5; i++)
@@ -78,6 +78,8 @@ void UBA_ArcDrawerComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 
 void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 {
+	if (!ensure(BallToSpawn)) { return; }
+
 	int i = 0;
 	for (float t = 0; t < MaxTimeInterval; t += TimeStep) 
 	{
@@ -86,13 +88,28 @@ void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 		
 		FVector newPos = FVector(0.0f, 0.0f, 0.0f);
 
-		newPos.X = CalculateDisplacementX(initVelocity.X, t);
-		newPos.Z = CalculateDisplacementY(initVelocity.Z, t, Gravity);
+		newPos.X = CalculateDisplacementX(initVelocity.X, t, ArcAngle);
+		newPos.Z = CalculateDisplacementY(initVelocity.Z, t, Gravity, ArcAngle);
 
 		//set the object's positon to the new position
 		ball->SetActorRelativeLocation(newPos);
 		i++;
 	}
+}
 
+void UBA_ArcDrawerComponent::AdjustArcValues(float Velocity)
+{
+	initVelocity = FVector(Velocity, 0, Velocity);
+	ArcAngle = CalculateAngle(FVector::UpVector, initVelocity);
+}
+
+float UBA_ArcDrawerComponent::CalculateAngle(FVector VectorA, FVector VectorB)
+{
+	float DotProduct = FVector::DotProduct(VectorA, VectorB);
+	float LengthProduct = VectorA.Size() * VectorB.Size();
+
+	float angle = FMath::Acos(DotProduct / LengthProduct);
+
+	return angle;
 }
 
