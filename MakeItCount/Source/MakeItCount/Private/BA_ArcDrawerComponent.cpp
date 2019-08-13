@@ -25,15 +25,15 @@ UBA_ArcDrawerComponent::UBA_ArcDrawerComponent()
 
 
 //calculates the x displacement
-float UBA_ArcDrawerComponent::CalculateDisplacementX(const float &initialVelocity, const float &time)
+float UBA_ArcDrawerComponent::CalculateDisplacementX(const float &initialVelocity, const float &time, const float &angle)
 {
-	return initialVelocity * time;
+	return initialVelocity * time * FMath::Cos(angle);
 }
 
 //calculate the Y displacement(Z in unreal)
-float UBA_ArcDrawerComponent::CalculateDisplacementY(const float & initialVelocityY, const float & time, const float & gravity)
+float UBA_ArcDrawerComponent::CalculateDisplacementY(const float & initialVelocityY, const float & time, const float & gravity, const float &angle)
 {
-	return (initialVelocityY * time) + (0.5 * gravity * (time * time));
+	return (initialVelocityY * time * FMath::Sin(angle)) + ((0.5 * gravity) * (time * time));
 }
 
 // Called when the game starts
@@ -42,7 +42,7 @@ void UBA_ArcDrawerComponent::BeginPlay()
 	Super::BeginPlay();
 
 	//initial set up 
-	AActor* MyOwner = this->GetOwner();
+	MyOwner = this->GetOwner();
 	UWorld* World = MyOwner->GetWorld();
 	Gravity = World->GetGravityZ();
 
@@ -88,8 +88,8 @@ void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 		
 		FVector newPos = FVector(0.0f, 0.0f, 0.0f);
 
-		newPos.X = CalculateDisplacementX(initVelocity.X, t);
-		newPos.Z = CalculateDisplacementY(initVelocity.Z, t, Gravity);
+		newPos.X = CalculateDisplacementX(initVelocity.X, t, ArcAngle);
+		newPos.Z = CalculateDisplacementY(initVelocity.Z, t, Gravity, ArcAngle);
 
 		//set the object's positon to the new position
 		ball->SetActorRelativeLocation(newPos);

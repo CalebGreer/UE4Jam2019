@@ -18,11 +18,12 @@ public:
 
 private:
 
+	AActor* MyOwner = nullptr;
 	TArray<ABA_ball*> BallArray;
 	float Gravity;
 
-	float CalculateDisplacementX(const float &initialVelocityX, const float &time);
-	float CalculateDisplacementY(const float &initialVelocityY, const float &time, const float &gravity);
+	float CalculateDisplacementX(const float &initialVelocityX, const float &time, const float &angle);
+	float CalculateDisplacementY(const float &initialVelocityY, const float &time, const float &gravity, const float &angle);
 
 protected:
 	// Called when the game starts
