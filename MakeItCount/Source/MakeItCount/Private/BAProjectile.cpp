@@ -37,6 +37,6 @@ void ABAProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPri
 
 void ABAProjectile::LaunchProjectile(float Speed)
 {
-	MovementComp->SetVelocityInLocalSpace(FVector::ForwardVector * Speed);
+	MovementComp->SetVelocityInLocalSpace((FVector::ForwardVector * Speed) + (FVector::UpVector * Speed));
 	MovementComp->Activate();
 }
