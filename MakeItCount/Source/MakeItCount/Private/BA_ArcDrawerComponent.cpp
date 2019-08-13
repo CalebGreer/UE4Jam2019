@@ -97,8 +97,19 @@ void UBA_ArcDrawerComponent::DrawArc(const FVector initVelocity)
 	}
 }
 
-void UBA_ArcDrawerComponent::ChangeVelocity(float value)
+void UBA_ArcDrawerComponent::AdjustArcValues(float Velocity)
 {
-	initVelocity = FVector(value, 0, value);
+	initVelocity = FVector(Velocity, 0, Velocity);
+	ArcAngle = CalculateAngle(FVector::UpVector, initVelocity);
+}
+
+float UBA_ArcDrawerComponent::CalculateAngle(FVector VectorA, FVector VectorB)
+{
+	float DotProduct = FVector::DotProduct(VectorA, VectorB);
+	float LengthProduct = VectorA.Size() * VectorB.Size();
+
+	float angle = FMath::Acos(DotProduct / LengthProduct);
+
+	return angle;
 }
 

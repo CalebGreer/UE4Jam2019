@@ -46,7 +46,7 @@ void UBAAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 void UBAAimingComponent::Initialize(UBA_ArcDrawerComponent * ArcDrawerToSet, UStaticMeshComponent* BarrelToSet)
 {
 	ArcDrawer = ArcDrawerToSet;
-	ArcDrawer->ChangeVelocity(MinLaunchSpeed);
+	ArcDrawer->AdjustArcValues(MinLaunchSpeed);
 
 	Barrel = BarrelToSet;
 	Barrel->SetVisibility(false);
@@ -72,7 +72,7 @@ void UBAAimingComponent::Fire()
 	Shots--;
 
 	LaunchSpeed = MinLaunchSpeed;
-	ArcDrawer->ChangeVelocity(LaunchSpeed);
+	ArcDrawer->AdjustArcValues(LaunchSpeed);
 }
 
 void UBAAimingComponent::ActivateChargingShot()
@@ -86,6 +86,9 @@ void UBAAimingComponent::ChargeShot(float chargeSpeed)
 	LaunchSpeed += chargeSpeed;
 	LaunchSpeed = FMath::Clamp<float>(LaunchSpeed, MinLaunchSpeed, MaxLaunchSpeed);
 
-	ArcDrawer->ChangeVelocity(LaunchSpeed);
+	ArcDrawer->AdjustArcValues(LaunchSpeed);
 }
+
+
+
 

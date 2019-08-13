@@ -47,7 +47,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Variables")
 	FVector initVelocity;
 
-	UFUNCTION(BlueprintCallable, Category = "Aiming")
-	void ChangeVelocity(float value);
-		
+	void AdjustArcValues(float Velocity);
+
+private:
+	float ArcAngle;
+	
+	float CalculateAngle(FVector VectorA, FVector VectorB);
+
 };
