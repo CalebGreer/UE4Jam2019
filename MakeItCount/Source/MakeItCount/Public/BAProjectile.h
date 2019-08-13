@@ -37,4 +37,7 @@ public:
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
 	UProjectileMovementComponent* GetProjectileMovement() const { return MovementComp; }
+
+	void LaunchProjectile(float Speed);
+
 };
