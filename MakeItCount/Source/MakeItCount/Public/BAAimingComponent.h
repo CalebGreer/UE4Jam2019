@@ -39,13 +39,13 @@ private:
 	UStaticMeshComponent* Barrel = nullptr;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float MinLaunchSpeed = 1000;
+	float MinLaunchSpeed = 20;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float MaxLaunchSpeed = 10000;
+	float MaxLaunchSpeed = 150;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float ChargingSpeed = 100;
+	float ChargingSpeed = 2;
 
 	float LaunchSpeed;
 

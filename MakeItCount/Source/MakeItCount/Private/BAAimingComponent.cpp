@@ -72,6 +72,8 @@ void UBAAimingComponent::Fire()
 	Shots--;
 
 	LaunchSpeed = MinLaunchSpeed;
+	UE_LOG(LogTemp, Warning, TEXT("Min speed: %f"), MinLaunchSpeed);
+
 	ArcDrawer->AdjustArcValues(LaunchSpeed);
 }
 
@@ -83,7 +85,7 @@ void UBAAimingComponent::ActivateChargingShot()
 
 void UBAAimingComponent::ChargeShot(float chargeSpeed)
 {
-	LaunchSpeed += chargeSpeed;
+	LaunchSpeed += chargeSpeed * GetWorld()->DeltaTimeSeconds;
 	LaunchSpeed = FMath::Clamp<float>(LaunchSpeed, MinLaunchSpeed, MaxLaunchSpeed);
 
 	ArcDrawer->AdjustArcValues(LaunchSpeed);
