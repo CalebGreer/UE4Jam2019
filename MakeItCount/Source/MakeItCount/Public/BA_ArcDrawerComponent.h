@@ -50,6 +50,10 @@ public:
 
 	void AdjustArcValues(float Velocity);
 
+	void HideArc();
+
+	void ShowArc();
+
 private:
 	float ArcAngle;
 	

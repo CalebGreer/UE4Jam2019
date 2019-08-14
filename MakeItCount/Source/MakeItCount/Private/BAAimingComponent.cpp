@@ -75,12 +75,14 @@ void UBAAimingComponent::Fire()
 	UE_LOG(LogTemp, Warning, TEXT("Min speed: %f"), MinLaunchSpeed);
 
 	ArcDrawer->AdjustArcValues(LaunchSpeed);
+	ArcDrawer->HideArc();
 }
 
 void UBAAimingComponent::ActivateChargingShot()
 {
 	if (Shots <= 0) { return; }
 	bCharging = true;
+	ArcDrawer->ShowArc();
 }
 
 void UBAAimingComponent::ChargeShot(float chargeSpeed)
