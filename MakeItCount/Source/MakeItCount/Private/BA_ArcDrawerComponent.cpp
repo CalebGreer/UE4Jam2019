@@ -103,6 +103,22 @@ void UBA_ArcDrawerComponent::AdjustArcValues(float Velocity)
 	ArcAngle = CalculateAngle(FVector::UpVector, initVelocity);
 }
 
+void UBA_ArcDrawerComponent::HideArc()
+{
+	for (int i = 0; i < BallArray.Num(); i++)
+	{
+		BallArray[i]->bHidden = true;
+	}
+}
+
+void UBA_ArcDrawerComponent::ShowArc()
+{
+	for (int i = 0; i < BallArray.Num(); i++)
+	{
+		BallArray[i]->bHidden = false;
+	}
+}
+
 float UBA_ArcDrawerComponent::CalculateAngle(FVector VectorA, FVector VectorB)
 {
 	float DotProduct = FVector::DotProduct(VectorA, VectorB);
